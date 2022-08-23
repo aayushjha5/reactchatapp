@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,button,input{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  max-height: 100vh;
+  max-width: 100wv;
+  overflow: hidden;
+}
