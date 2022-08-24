@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/logo.svg";
@@ -42,6 +42,12 @@ const Register = () => {
     navigate("/");
    };
   };
+
+  useEffect(() => {
+    if(localStorage.getItem('chat-app-user')) {
+      navigate('/');
+    }
+  }, );
 
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
